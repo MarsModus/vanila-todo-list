@@ -1,1 +1,1 @@
-# vanila-todo-list
+# vanilla-todo-list
