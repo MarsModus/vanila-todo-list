@@ -1,0 +1,152 @@
+*, body{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.main-header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.log-out-link{
+    text-decoration: none;
+}
+
+.container{
+    background-color:beige;
+    border:2px solid darkslategrey;
+    margin-top: 10vh;
+    padding: 2em;
+    width:50%;
+    border-radius: 3px;
+    text-align: center;
+}
+
+form, .edit-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:.7em;
+    margin-top: .7em;
+}
+
+.todo-form input, .todo-form textarea, .edit-form input, .edit-form textarea {
+    font-size: 100%;
+    width: 80%;
+}
+
+ul.todo-items{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:.7em;
+    padding:.5em;
+    margin:0.7em;
+}
+
+.item{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    gap:.7em;
+    background-color:beige;
+    border:2px solid darkslategrey;
+    padding:.5em;
+    border-radius: 7px;
+}
+
+.checked div{
+    text-decoration: line-through;
+}
+
+.todo-text{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap:.3em;
+}
+.todo-text h3{
+    text-decoration: underline;
+}
+
+.add-btn{
+    border:2px solid green;
+    color: green;
+    font-size: 150%;
+    font-weight: bolder;
+    padding:.0 .3em;
+    margin-top: .3em;
+    border-radius: 50%;
+}
+
+.delete-btn{
+    color:red;
+    font-size: 90%;
+    padding:.2em .4em;
+    cursor: pointer;
+    border-radius: 50%;
+    border:2px solid red;
+    margin-right: .2em;
+}
+
+.edit-modal{
+    width: 50%;
+    position: fixed;
+    top:10vh;
+    right: 25%;
+    margin: auto;
+    z-index: 1;
+}
+
+.edit-modal h1{
+    color: beige;
+}
+
+.edit-form{
+    background-color:darkslategrey;
+    border-radius: 3px;
+    text-align: center;
+    padding: 2em;
+}
+
+.edit-btn{
+    font-size: 140%;
+    cursor: pointer;
+    margin-right: .2em;
+}
+
+.save-edit-btn, .cancel-edit-btn{
+    background-color: beige;
+    color: darkslategrey;
+    margin-top: .7em;
+    border: 2px solid rgb(71, 160, 63);
+    border-radius: 7px;
+    font-size: 90%;
+    font-weight: bolder;
+    padding: .6em 1em;
+    cursor: pointer;
+}
+
+.cancel-edit-btn{
+    border-color: rgb(187, 75, 75);
+    margin-left: 1em;
+}
+
+/*some responsiveness*/
+@media screen and (max-width: 650px) {
+    .container, .item{
+        width:85%;
+    }
+
+    ul.todo-items{
+        margin: 0 auto;
+    }
+    .edit-modal{
+        width: 85%;
+        right:7.5%;
+    }
+  }

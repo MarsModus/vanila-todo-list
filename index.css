@@ -1,0 +1,43 @@
+*, body {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color:beige;
+    border:2px solid darkslategrey;
+    margin-top: 20vh;
+    padding: 2em;
+    width:40%;
+    border-radius: 3px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:.7em;
+}
+
+.hidden-form{
+    display: none;
+}
+
+button, input{
+    height: 30px;
+    width: 100%;
+}
+
+button{
+     background-color:darkslategrey;
+     color:beige;
+     font-size: 95%;
+     font-weight: bolder;
+    border-radius: 3px;
+}
+button:hover{
+    cursor: pointer;
+    background-color:beige;
+     color:darkslategrey;
+}
