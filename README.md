@@ -10,17 +10,17 @@ In this branch, ES6 modules were added to the mix, making the code easier to mai
 
 ## How to use
 
-### You will need to
+### You will need:
 
 - A CLI like hyper or the VS Code Termiinal.
 - To clone this repo into a folder on your machine.
 - Install npm for the dependancies.
 
-### Step by step
+### Step by step:
 
 1. Clone the repo into a folder on your machine.
 2. cd into that folder with your prefered CLI.
-3. Run npm install for the dependancies.
-4. And finaly run npm start.
+3. Run "npm install" for the dependancies.
+4. And finaly run "npm start" to launch the application on http://localhost:1234.
 
 ## Hope you enjoy.
