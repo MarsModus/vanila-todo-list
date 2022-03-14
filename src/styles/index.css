@@ -1,0 +1,318 @@
+*,
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(187, 196, 214);
+}
+
+/*HEADER STYLES*/
+.main-header {
+  height: 40px;
+  padding: 0.5em;
+  background-color: darkslategrey;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  margin-left: 2em;
+  color: beige;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 160px;
+  margin-right: 2em;
+}
+
+.log-out-link {
+  color: beige;
+  text-decoration: none;
+}
+.log-out-link:hover {
+  color: crimson;
+}
+
+.user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-right: 0;
+}
+
+/*FORM CONTAINER LAYOUT STYLES*/
+
+.form,
+.edit-form {
+  padding: 1.5em 2em;
+  margin-top: 10vh;
+  width: 45%;
+  border-radius: 3px;
+  box-shadow: 0 8px 8px -4px black;
+}
+
+.form {
+  background-color: beige;
+  border: 2px solid darkslategrey;
+}
+
+.edit-modal {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  margin: auto;
+  z-index: 1;
+  background-color: rgb(133, 130, 130, 0.6);
+}
+
+.form,
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7em;
+}
+
+.form input,
+.form textarea {
+  border: none;
+  background-color: rgb(187, 196, 214);
+  color: darkslategrey;
+  font-weight: bold;
+  padding-left: 0.5em;
+}
+
+.hidden-element {
+  display: none;
+}
+
+.submit-btn,
+.form input,
+.form textarea,
+.edit-form input,
+.edit-form textarea {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.submit-btn,
+.form input,
+.edit-form input {
+  height: 30px;
+}
+
+.form textarea,
+.edit-form textarea {
+  height: 50px;
+}
+
+.form textarea, .edit-form textarea{
+    resize: vertical;
+}
+
+.submit-btn {
+  background-color: darkslategrey;
+  color: beige;
+  font-size: 95%;
+  font-weight: bolder;
+}
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: beige;
+  color: darkslategrey;
+}
+
+.sign-up-message, .log-in-message{
+  margin-left: 0;
+  color:rgb(235, 59, 59);
+}
+
+#linkLogIn,
+#linkSignUp {
+  text-decoration: none;
+  margin-left: 0;
+  color: rgb(25, 81, 128);
+  font-weight: 400;
+}
+
+#linkLogIn:hover,
+#linkSignUp:hover {
+  color: brown;
+}
+
+ul.todo-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.7em;
+  padding: 0.5em;
+  margin: 0.7em;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 47%;
+  gap: 0.7em;
+  background-color: beige;
+  border: 2px solid darkslategrey;
+  padding: 0.5em;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px -4px black;
+  overflow-wrap: anywhere;
+}
+
+.todo-header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-header h3{
+  width: 60%;
+}
+
+.todo-text {
+  width: 75%;
+  background-color: rgb(187, 196, 214);
+  margin:.2em 2em;
+  text-align: left;
+  border-radius: 4px;
+}
+
+.todo-text p{
+  padding: .5em .5em;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-left: 0.2em;
+  margin-top: 0.2em;
+  cursor: pointer;
+}
+
+.checked .todo-header h3, .checked .todo-text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.add-btn {
+  border: 2px solid darkslategrey;;
+  background-color: darkslategrey;
+  color: beige;
+  font-size: 150%;
+  font-weight: bolder;
+  padding: 0 0.3em;
+  margin-top: 0.3em;
+  border-radius: 50%;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.edit-btn,
+.delete-btn {
+  color: rgb(56, 56, 56);
+  font-size: 120%;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-right: 0.2em;
+  margin-top: 0.1em;
+  transition: color ease-in-out .4s;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.edit-btn:hover,
+.delete-btn:hover{
+    color:black;
+}
+
+.todo-form-container h2 {
+  color: rgb(22, 37, 37);
+}
+
+.edit-modal h2 {
+  color: beige;
+}
+
+.edit-form {
+  background-color: darkslategrey;
+  margin-top: 17vh;
+}
+
+.edit-form input,
+.edit-form textarea {
+  border: none;
+  background-color: beige;
+}
+
+.save-edit-btn,
+.cancel-edit-btn {
+  background-color: beige;
+  color: darkslategrey;
+  margin-top: 0.7em;
+  border: 2px solid rgb(71, 160, 63);
+  border-radius: 5px;
+  font-size: 90%;
+  font-weight: bolder;
+  padding: 0.6em 1em;
+  cursor: pointer;
+  transition: all ease-in-out .3s;
+}
+.save-edit-btn:hover {
+  background-color: rgb(71, 160, 63);
+  border-color: beige;
+  color: beige;
+}
+
+.cancel-edit-btn {
+  border-color: rgb(187, 75, 75);
+  margin-left: 1em;
+}
+.cancel-edit-btn:hover {
+  background-color: rgb(187, 75, 75);
+  border-color: beige;
+  color: beige;
+}
+
+/*RESPONSIVE RULES*/
+@media screen and (max-width: 650px) {
+  .form,
+  .edit-form,
+  .item {
+    width: 85%;
+  }
+  ul.todo-items {
+    margin: 1em auto;
+  }
+  .edit-modal {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo h2 {
+    display: none;
+  }
+}

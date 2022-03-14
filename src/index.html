@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <script
+      src="https://kit.fontawesome.com/a153b5788e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <span class="logo"
+        ><i class="fa">&#xf0ae;</i>
+        <h2>My Todos</h2></span
+      >
+      <div class="main-nav">
+        <span class="user">
+          <i class="fa">&#xf2bd; </i>
+          <h4 class="loggedUser">Guest</h4>
+        </span>
+        <a class="log-out-link hidden-element" href="">Log Out</a>
+      </div>
+    </header>
+    <div class="form-container">
+      <!--Log in form-->
+      <form class="form log-in-form hidden-element">
+        <h2>Log In</h2>
+        <p class="log-in-message"></p>
+        <input
+          type="text"
+          autofocus
+          class="log-in-name"
+          placeholder="Username"
+        />
+        <input type="password" class="log-in-password" placeholder="Password" />
+        <button type="submit" class="submit-btn log-in-btn">Confirm</button>
+        <a id="linkLogIn" href="#">No Account? Create Account here.</a>
+      </form>
+      <!--Sign Up form-->
+      <form class="form sign-up-form hidden-element">
+        <h2>Sign Up</h2>
+        <p class="sign-up-message"></p>
+        <input type="text" class="sign-up-name" placeholder="Username" />
+        <input
+          type="password"
+          class="sign-up-password"
+          placeholder="Password"
+        />
+        <input
+          type="password"
+          class="confirm-sign-up-password"
+          placeholder="Confirm password"
+        />
+        <button type="submit" class="submit-btn sign-up-btn">
+          Create Account
+        </button>
+        <a id="linkSignUp" href="#">I already have an account.</a>
+      </form>
+      <!--Add Todos form-->
+      <form class="form todo-form hidden-element">
+        <h2>Add Todo</h2>
+        <input type="text" class="todo-title" placeholder="Title" autofocus />
+        <textarea
+          class="todo-content"
+          placeholder="Enter details here..."
+        ></textarea>
+        <button type="submit" class="add-btn">+</button>
+      </form>
+    </div>
+    <ul class="todo-items hidden-element">
+      <!--Dynamic Todo list-->
+    </ul>
+    <!--Container for todo edits-->
+    <div class="edit-modal"></div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
