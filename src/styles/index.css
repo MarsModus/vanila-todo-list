@@ -28,11 +28,11 @@ body{
 .main-nav {
   display: flex;
   justify-content: flex-end;
-  width: 160px;
-  margin-right: 2em;
+  margin-right: 1.5em;
 }
 
 .log-out-link {
+  margin-left: .7em;
   color: beige;
   text-decoration: none;
 }
@@ -136,6 +136,11 @@ body{
 .sign-up-message, .log-in-message{
   margin-left: 0;
   color:rgb(235, 59, 59);
+}
+.edit-message{
+  margin-left: 0;
+  font-weight: bold;
+  color:rgb(236, 93, 93);
 }
 
 #linkLogIn,
@@ -314,5 +319,17 @@ input[type="checkbox"] {
 @media screen and (max-width: 500px) {
   .logo h2 {
     display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main-nav{
+    margin: 0 .7em;
+  }
+  .logo{
+    margin-left: .7em;
+  }
+  .main-header{
+    padding: .5em 0;
   }
 }

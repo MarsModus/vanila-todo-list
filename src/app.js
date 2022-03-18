@@ -3,16 +3,16 @@
  */
 
 //Business
-import { setUp, userValidate} from "./modules/business.js";
+import { setUp, validateExistingUser} from "./models/todo/actions.js";
 
 //Events
-import { addLogInClickEvents } from "./modules/events.js";
+import { addLogInClickEvents } from "./models/ui-model/actions.js";
 
 window.addEventListener("load", () => {
   setUp();
 })
   addLogInClickEvents();
-  userValidate();
+  validateExistingUser();
 
 
 
