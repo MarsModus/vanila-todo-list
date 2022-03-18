@@ -6,7 +6,7 @@ It uses local storage to store user credentials and user todos. Security is pret
 
 Once Logged in the user can add, complete, edit and delete todos.
 
-In this branch, the files were restructured to match prefered format, localStorage became reusable and auth was improved to check for valid user emails. 
+In this branch, the files were restructured to match prefered format, localStorage became reusable and auth was improved to check for valid user emails. Along with some code refactoring and style improvements.
 
 ## How to use
 
