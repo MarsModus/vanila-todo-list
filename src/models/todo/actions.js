@@ -19,14 +19,14 @@ import {
 
 import {
   addToLocalStorage,
-  getUsersFromLocalStorage,
+  getFromLocalStorage,
 } from "../utils/localStorage.js";
 
 import { addTodoClickEvents, loggedIn } from "../ui-model/actions.js";
 
 import { validateNewUser} from "../utils/auth.js";
 
-getUsersFromLocalStorage("users");
+getFromLocalStorage("users");
 
 function setUp() {
   const activeUser = users.some((element) => {

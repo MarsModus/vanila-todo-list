@@ -1,7 +1,7 @@
 import { users, signUpMessage, signUpEmail } from "../ui-model/selectors.js";
-import { getUsersFromLocalStorage } from "./localStorage.js";
+import { getFromLocalStorage } from "./localStorage.js";
 
-getUsersFromLocalStorage("users");
+getFromLocalStorage("users");
 var error = signUpMessage.innerHTML;
 
 function validateNewUser(uemail, pwd, pwdConfirm) {
